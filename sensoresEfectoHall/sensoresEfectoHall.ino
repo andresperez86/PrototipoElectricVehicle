@@ -8,10 +8,10 @@
 */
 
 // --- Pines ---
-const int SENSOR_HALL_PIN_1 = 2;   // GPIO para sensor Hall 1
-const int SENSOR_HALL_PIN_2 = 4;   // GPIO para sensor Hall 2
-const int SensorPin_C = 15;         // ADC para ACS709 (corriente)
-const int SensorPin_V = 18;         // ADC para divisor resistivo (voltaje)
+const int SENSOR_HALL_PIN_1 = 25;   // GPIO25 → Sensor Hall 1
+const int SENSOR_HALL_PIN_2 = 26;   // GPIO26 → Sensor Hall 2
+const int SensorPin_C = 34;         // GPIO34 → ACS709 (corriente, ADC1_CH6)
+const int SensorPin_V = 35;         // GPIO35 → Divisor de voltaje (ADC1_CH7)
 
 // --- Constantes ADC ---
 #define ADC_VREF_mV 3300.0     // Referencia ADC ESP32 en mV

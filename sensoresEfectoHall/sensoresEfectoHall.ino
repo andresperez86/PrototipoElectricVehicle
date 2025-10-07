@@ -46,8 +46,13 @@ void leerCorrienteVoltaje() {
   // Lectura de corriente y voltaje con el ACS709
   int adc = analogRead(SensorPin_C);
   int adc1 = analogRead(SensorPin_V);
-  corriente = map(adc, 2816, 3040, 0 , 6600) * 5 / 5000.0; // Escalado de corriente
-  voltaje = map(adc1, 2816, 3040, 0 , 6600) * 5 / 5000.0;  // Escalado de voltaje
+  corriente = map(adc, 2816, 3485, 0 , 18500) * 5 / 5000.0; // Escalado de corriente
+   //voltaje = map(adc1, 0, 230111, 0 , 500000) * 4 / 500.0 ;  // Escalado de voltaje
+  voltaje = (map(adc1, 0, 4095, 0, 54000) * 3.3 / 4095.0) * 1.213; // Ajuste de voltaje para 3.3V en ESP32
+  Serial.println(" volta");
+   Serial.print(adc);
+   Serial.println(" volta");
+   Serial.print(adc1);
 }
 
 // ===============================================================

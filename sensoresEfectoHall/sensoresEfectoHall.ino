@@ -12,11 +12,11 @@
 #include <SD.h>
 
 // --- Pines ESP32 ---
-const int SENSOR_HALL_PIN_1 = 25;   // Sensor Hall 1
-const int SENSOR_HALL_PIN_2 = 26;   // Sensor Hall 2
-const int SensorPin_C      = 34;    // ACS712 (corriente)
-const int SensorPin_V      = 35;    // Divisor resistivo (voltaje)
-const int SD_CS_PIN        = 5;     // Chip Select de la SD
+const int SENSOR_HALL_PIN_1 = 13;   // Sensor Hall 1
+const int SENSOR_HALL_PIN_2 = 22;   // Sensor Hall 2
+const int SensorPin_C      = 4;    // ACS712 (corriente)
+const int SensorPin_V      = 12;    // Divisor resistivo (voltaje)
+const int SD_CS_PIN        = 33;     // Chip Select de la SD
 
 // --- ADC ---
 #define ADC_RESOLUCION 4096.0

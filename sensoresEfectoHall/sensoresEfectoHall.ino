@@ -23,7 +23,7 @@ const int SD_CS_PIN        = 33;     // Chip Select de la SD
 inline float rawToMilliVolts(int raw) { return 3300.0f * (raw / 4095.0f); }
 
 // --- Parámetros físicos ---
-float radioLlanta_mm = 250.0;
+float radioLlanta_mm = 340.0;
 const int PULSOS_POR_REVOLUCION_POR_SENSOR = 1;
 
 // --- Variables globales ---
